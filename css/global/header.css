@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1200;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.nav_container {
+    background-color: #f6f6f6;
+    max-width: 1400px;
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 32px;
+}
+
+.menu-toggle {
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+    display: block;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-links a {
+    color: #252525;
+    font-family: Manrope;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #C49E32;
+}
+
+.intro_btn a {
+    text-decoration: none;
+}
+
+.nav_btn1 {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #252525;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav_btn1:hover {
+    border-color: #C49E32;
+    transition: all 0.3s ease;
+}
+
+.nav-links a.nav_btn2 {
+    color: #f6f6f6 !important;
+}
+
+.nav_btn2 {
+    cursor: pointer;
+    background-color: #C49E32;
+    border: none;
+    border: 2px solid #C49E32;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav_btn2:hover {
+    background-color: #DCBB4F;
+    border: 2px solid #DCBB4F;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle {
+    display: none;
+    /* Só aparece em telas pequenas */
+}
+
+@media (max-width: 1150px) {
+    .navbar {
+        top: 0px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav_container {
+        border-radius: 0px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f6f6f6;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px 40px;
+        display: none;
+        gap: 14px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+
+    .nav_container {
+        flex-wrap: wrap;
+        position: relative;
+    }
+}
+
+@media (max-width: 1150px) {
+    .navbar {
+        left: 0;
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        padding: 16px 32px;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin-bottom: 12px;
+    }
+}

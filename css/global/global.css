@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--linear-bg, linear-gradient(180deg, #252525 0%, #181818 100%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

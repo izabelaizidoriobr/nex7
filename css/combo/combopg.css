@@ -1,0 +1,445 @@
+.combo1-bg {
+    padding: 50px;
+}
+
+.totalpass_container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.totapass_img {
+    width: 540px;
+    height: 640px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.totapass_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.totalpass_conteudo img {
+    height: 54px;
+    margin-bottom: 44px;
+}
+
+.totalpass_txt {
+    max-width: 540px;
+}
+
+.benefits-list_totalpass {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.totalpass_txt h1 {
+    margin-bottom: 32px;
+}
+
+.benefits-list_totalpass li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.benefits-list_totalpass .icon {
+    margin-top: 8px;
+    width: 22px;
+    height: 22px;
+    background-color: #00C97E;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefits-list_totalpass .icon svg {
+    width: 12px;
+    height: 18px;
+}
+
+/*CTA TOTALPASS*/
+
+.CTA {
+    margin-top: 64px;
+}
+
+.cta_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_txt h2 {
+    max-width: 600px;
+    text-align: center;
+    background: var(--linear-01, linear-gradient(90deg, #24CF78 0%, #F6F6F6 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*CARDS - t1*/
+
+.cards-dest-container {
+    padding: 50px;
+}
+
+.card_dest_totalpass {
+    margin-top: 64px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_t1 {
+    max-width: 224px;
+    height: 160px;
+    background-color: #f6f6f6;
+    padding: 22px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardt1_cont img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+
+/* CARDS T2*/
+
+.card_t2 {
+    max-width: 224px;
+    height: 160px;
+    background-color: #24CF78;
+    padding: 22px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardt2_cont img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+
+.card_dest_totalpass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* COMBO TELEMEDICINA */
+
+.combo2-bg {
+    padding: 80px;
+}
+
+.telemedicina_container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.telemedicina_img {
+    width: 540px;
+    height: 640px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.telemedicina_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.telemedicina_conteudo img {
+    height: 54px;
+    margin-bottom: 44px;
+}
+
+.telemedicina_txt {
+    max-width: 540px;
+}
+
+.benefits-list_telemedicina {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.telemedicina_txt h1 {
+    margin-bottom: 32px;
+}
+
+.benefits-list_telemedicina li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.benefits-list_telemedicina .icon {
+    margin-top: 8px;
+    width: 22px;
+    height: 22px;
+    background-color: #00C97E;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefits-list_telemedicina.icon svg {
+    width: 12px;
+    height: 18px;
+}
+
+/*CTA TELEMEDICINA*/
+
+.CTA_telemedicina {
+    margin-top: 64px;
+}
+
+.cta_telemedicina_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_telemedicina_txt h2 {
+    max-width: 600px;
+    text-align: center;
+    background: var(--linar-02, linear-gradient(90deg, #4A1EA6 0%, #F6F6F6 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*CARDS - m1*/
+
+.cards-dest-container {
+    padding: 80px;
+}
+
+.card_m1 {
+    max-width: 224px;
+    height: 160px;
+    background-color: #f6f6f6;
+    padding: 22px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardm1_cont img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+
+/* CARDS m2*/
+
+.card_dest_telemedicina {
+    margin-top: 64px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_m2 {
+    max-width: 224px;
+    height: 160px;
+    background-color: #4A1EA6;
+    padding: 22px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardm2_cont img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+
+.card_dest_telemedicina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* COMBO FARMACIA */
+
+/* COMBO TELEMEDICINA */
+
+.combo3-bg {
+    padding: 80px;
+}
+
+.farmacia_container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.farmacia_img {
+    width: 540px;
+    height: 640px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.farmacia_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.farmacia_conteudo img {
+    height: 54px;
+    margin-bottom: 44px;
+}
+
+.farmacia_txt {
+    max-width: 540px;
+}
+
+.benefits-list_farmacia {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.farmacia_txt h1 {
+    margin-bottom: 32px;
+}
+
+.benefits-list_farmaciali {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.benefits-list_farmacia .icon {
+    margin-top: 8px;
+    width: 22px;
+    height: 22px;
+    background-color: #00C97E;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefits-list_farmacia .icon svg {
+    width: 12px;
+    height: 18px;
+}
+
+/*CTA TELEMEDICINA*/
+
+.CTA_farmacia {
+    margin-top: 64px;
+}
+
+.cta_farmacia_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_farmacia_txt h2 {
+    max-width: 600px;
+    text-align: center;
+    background: var(--linear-03, linear-gradient(90deg, #165FF1 0%, #F6F6F6 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*CARDS - m1*/
+.card_dest_farmacia {
+    margin-top: 64px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-dest-container {
+    padding: 80px;
+}
+
+.card_fm1 {
+    max-width: 224px;
+    height: 160px;
+    background-color: #f6f6f6;
+    padding: 22px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardfm1_cont img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+
+/* CARDS m2*/
+
+.card_fm2 {
+    max-width: 224px;
+    height: 160px;
+    background-color: #165FF1;
+    padding: 22px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardfm2_cont img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+
+.card_dest_farmacia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}

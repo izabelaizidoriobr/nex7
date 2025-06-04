@@ -1,0 +1,134 @@
+.clientes_bg {
+    padding: 50px;
+}
+
+.clientes_logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 44px;
+}
+
+
+
+.est_logos {
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.est_logos:hover {
+    transform: scale(1.05);
+}
+
+.est_logos img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/*DEPOIMENTOS*/
+
+.clientes_depoimentos {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.depoimentos_cards {
+    max-width: 400px;
+    max-height: 320px;
+    background-color: #f6f6f6;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.dep_txt p {
+    text-align: center;
+}
+
+.estrelas {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.cliente_empresa {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.dep_avt img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 1300px) {
+    .clientes_depoimentos {
+        margin-top: 44px;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .clientes_logos {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .est_logos {
+        flex: 0 0 auto;
+        width: 120px;
+        height: 64px;
+    }
+
+    .clientes_logos_carrossel {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .clientes_logos {
+        display: flex;
+        gap: 16px;
+        animation: scroll-logos 30s linear infinite;
+        width: fit-content;
+        min-width: 100%;
+    }
+
+    @keyframes scroll-logos {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+
+    .clientes_depoimentos {
+        margin-top: 44px;
+        gap: 24px;
+        grid-template-columns: 1fr;
+    }
+
+
+}

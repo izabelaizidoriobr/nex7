@@ -1,0 +1,28 @@
+/*Importar as Páginas do css aqui*/
+
+/*UTILIDADES*/
+
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+
+/*GLOBAL*/
+
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/*HOME*/
+@import "./home/home.css";
+@import "./home/servicos.css";
+@import "./home/clientes.css";
+@import "./home/combo.css";
+@import "./home/parceiros.css";
+@import "./home/banner.css";
+@import "./home/bancario.css";
+@import "./home/sobrenos.css";
+
+/*COMBO*/
+@import "./combo/combopg.css";
+
+/*CONTATO*/
+@import "./contato/contatopg.css";

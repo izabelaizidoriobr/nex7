@@ -1,0 +1,42 @@
+.pareceiros-bg {
+    padding: 50px;
+}
+
+.parceiros_logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 64px;
+}
+
+@media (max-width: 840px) {
+    .parceiros_logos_carrossel {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .parceiros_logos {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        width: max-content;
+        animation: scroll-logos 30s linear infinite;
+    }
+
+    .est_logos {
+        flex: 0 0 auto;
+        width: 120px;
+        height: 64px;
+    }
+
+    @keyframes scroll-logos {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}

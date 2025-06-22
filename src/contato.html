@@ -57,57 +57,57 @@
 
         <!--  CONTATO  FORMULARIO   -->
         <div class="form-container">
-            <form>
-                <div class="form-group half">
-                    <label for="nome" class="font-title-s">Primeiro nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu primeiro nome" />
-                </div>
+            <form action="enviar.php" method="POST">
+            <div class="form-group half">
+                <label for="nome" class="font-title-s">Primeiro nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" required />
+            </div>
 
-                <div class="form-group half">
-                    <label for="sobrenome" class="font-title-s">Último nome</label>
-                    <input type="text" id="sobrenome" placeholder="Digite seu sobrenome" />
-                </div>
+            <div class="form-group half">
+                <label for="sobrenome" class="font-title-s">Último nome</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required />
+            </div>
 
-                <div class="form-group full">
-                    <label for="email" class="font-title-s">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail" />
-                </div>
+            <div class="form-group full">
+                <label for="email" class="font-title-s">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+            </div>
 
-                <div class="form-group half">
-                    <label for="empresa" class="font-title-s">Empresa</label>
-                    <input type="text" id="empresa" placeholder="Nome da empresa" />
-                </div>
+            <div class="form-group half">
+                <label for="empresa" class="font-title-s">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+            </div>
 
-                <div class="form-group half">
-                    <label for="segmento" class="font-title-s">Segmento</label>
-                    <input type="text" id="segmento" placeholder="Segmento da empresa" />
-                </div>
+            <div class="form-group half">
+                <label for="segmento" class="font-title-s">Segmento</label>
+                <input type="text" id="segmento" name="segmento" placeholder="Segmento da empresa" />
+            </div>
 
-                <div class="form-group third">
-                    <label for="cidade" class="font-title-s">Cidade</label>
-                    <input type="text" id="cidade" placeholder="Cidade" />
-                </div>
+            <div class="form-group third">
+                <label for="cidade" class="font-title-s">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade" />
+            </div>
 
-                <div class="form-group third">
-                    <label for="estado" class="font-title-s">Estado</label>
-                    <input type="text" id="estado" placeholder="Estado" />
-                </div>
+            <div class="form-group third">
+                <label for="estado" class="font-title-s">Estado</label>
+                <input type="text" id="estado" name="estado" placeholder="Estado" />
+            </div>
 
-                <div class="form-group third">
-                    <label for="referencia" class="font-title-s">Como ouviu falar sobre nós?</label>
-                    <input type="text" id="referencia" placeholder="Indicação, Google, etc (opcional)" />
-                </div>
+            <div class="form-group third">
+                <label for="referencia" class="font-title-s">Como ouviu falar sobre nós?</label>
+                <input type="text" id="referencia" name="referencia" placeholder="Indicação, Google, etc (opcional)" />
+            </div>
 
-                <div class="form-group full">
-                    <label for="mensagem" class="font-title-s">Como podemos ajudar?</label>
-                    <textarea id="mensagem" class="font-title-s" rows="6"
-                        placeholder="Descreva como podemos ajudar..."></textarea>
-                </div>
+            <div class="form-group full">
+                <label for="mensagem" class="font-title-s">Como podemos ajudar?</label>
+                <textarea id="mensagem" name="mensagem" class="font-title-s" rows="6"
+                    placeholder="Descreva como podemos ajudar..."></textarea>
+            </div>
 
-                <div class="btn-contato">
-                    <button type="submit"><a href="#" class="font-title-s cor-b0">ENVIAR</a></button>
-                </div>
-            </form>
+            <div class="btn-contato">
+                <button type="submit" class="font-title-s cor-b0">Enviar</button>
+            </div>
+        </form>
 
             <div class="info-contato">
                 <p class="font-title-s cor-b0"><strong>Telefone:</strong> 19 99999-9999</p>

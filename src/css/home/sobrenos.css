@@ -7,6 +7,31 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
     margin-top: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro_btn-sb {
+    background: #C49E32;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    margin: auto;
+    display: inline-block;
+}
+
+.intro_btn-sb:hover {
+    background: #DCBB4F;
+}
+
+.intro_btn-sb a {
+    font-family: "Manrope" sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f6f6f6;
+    text-decoration: none;
 }
 
 .sobre_txt p {
@@ -52,18 +77,9 @@
     .sobre_txt p {
         text-align: justify;
     }
-}
 
-@media (max-width: 480px) {
-    .sobrenos_container {
-        padding: 30px 20px;
-    }
-
-    .sobre_img img {
-        height: 300px;
-    }
-
-    .sobre_txt p {
-        font-size: 14px;
+    .intro_btn-sb {
+        margin: auto;
+        display: inline-block;
     }
 }

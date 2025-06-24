@@ -18,6 +18,13 @@
     height: 700px;
 }
 
+.sobre_emp img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 @media (max-width: 1024px) {
     .sobre_conteudo {
         grid-template-columns: 1fr 1fr;

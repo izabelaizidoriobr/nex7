@@ -9,9 +9,20 @@
     gap: 20px;
 }
 
-.combo_card img {
-    width: 450px;
+.combo_imagem {
+    position: relative;
+    z-index: 0;
+    width: 100%;
     height: 520px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.combo_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     border-radius: 12px;
 }
 
@@ -28,8 +39,8 @@
 .combo_imagem::after {
     content: "";
     position: absolute;
-    width: 450px;
-    height: 520px;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -93,26 +104,33 @@
         gap: 16px;
     }
 
-    .combo_card img,
-    .combo_imagem::after {
-        width: 100%;
+    .combo_imagem {
         height: 420px;
     }
 
     .combo__txt {
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 75%;
+        left: 24px;
+        transform: translateY(-50%);
+        z-index: 2;
+        padding-right: 16px;
+        max-width: 90%;
+    }
+
+    .combo__txt h1,
+    p {
+        text-align: left;
     }
 }
 
 @media (max-width: 768px) {
     .combo_container {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    .combo_card img,
-    .combo_imagem::after {
+    .combo_imagem {
         height: 360px;
     }
 
@@ -127,10 +145,8 @@
 }
 
 @media (max-width: 480px) {
-
-    .combo_card img,
-    .combo_imagem::after {
-        height: 300px;
+    .combo_imagem {
+        height: 280px;
     }
 
     .combo__txt {

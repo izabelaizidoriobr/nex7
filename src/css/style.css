@@ -21,6 +21,12 @@
 @import "./home/bancario.css";
 @import "./home/sobrenos.css";
 
+/*CARTÕES*/
+@import "./cartoes/cartoes.css";
+
+/*SOBRE NÓS*/
+@import "./sobrenos/sobrenospg.css";
+
 /*COMBO*/
 @import "./combo/combopg.css";
 

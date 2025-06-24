@@ -1,0 +1,242 @@
+.cartoes,
+.tab-container,
+.dec-section {
+    justify-items: center;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.estilo_df_titulo-ct {
+    padding-top: 200px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.title-tp2 {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartoes {
+    padding: 50px;
+    margin-top: 64px;
+    margin-bottom: 200px;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background-color: #C49E32;
+    color: #f6f6f6;
+}
+
+/* PAT DECORAÇÃO */
+.card {
+    margin-top: 100px;
+}
+
+.pat_dec h2 {
+    color: #CAAB49;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.pat_dec {
+    margin-top: 44px;
+    max-width: 280px;
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: 1px solid #CAAB49;
+    justify-items: center;
+}
+
+.card_pat {
+    margin-top: 64px;
+}
+
+.card_pat_cont {
+    margin-top: 44px;
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+
+.img_pat img {
+    width: 300;
+    height: 200px;
+}
+
+.txt_pat {
+    max-width: 640px;
+}
+
+.txt_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 44px;
+    gap: 24px;
+
+}
+
+.icons_pd {
+    justify-items: center;
+}
+
+.icons_pd p {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.btn-cards {
+    background: #C49E32;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    margin: auto;
+    display: block;
+    width: 200px;
+    margin-top: 44px;
+    justify-items: center;
+}
+
+.btn-cards:hover {
+    background: #DCBB4F;
+}
+
+.btn-cards a {
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: #f6f6f6;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .estilo_df_titulo {
+        padding-top: 150px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cartoes {
+        padding: 30px;
+        margin-top: 48px;
+    }
+
+    .card_pat_cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .img_pat img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .txt_pat {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .txt_icons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .btn-cards {
+        width: 200px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .estilo_df_titulo {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title-tp2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tab-buttons {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .txt_icons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btn-cards {
+        background: #C49E32;
+        border: none;
+        padding: 12px 32px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+        margin: auto;
+        display: block;
+        width: 200px;
+        margin-top: 44px;
+        justify-items: center;
+    }
+
+    .icons_pd svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .cartoes {
+        padding: 50px;
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .txt_icons {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-cards {
+        padding: 12px 16px;
+        width: 120px;
+    }
+}

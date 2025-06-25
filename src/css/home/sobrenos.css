@@ -7,8 +7,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
     margin-top: 64px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .intro_btn-sb {

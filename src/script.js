@@ -1,11 +1,21 @@
-
 //NAV BAR//
 document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.getElementById("menu-toggle");
     const nav = document.getElementById("nav-links");
 
-    toggle.addEventListener("click", () => {
+    toggle.addEventListener("click", (e) => {
+        e.stopPropagation(); // Impede que o clique se propague e feche o menu
         nav.classList.toggle("active");
+    });
+
+    // Nova funcionalidade: fecha o menu ao clicar fora dele
+    document.addEventListener("click", function (e) {
+        const isClickInsideNav = nav.contains(e.target);
+        const isClickOnToggle = toggle.contains(e.target);
+
+        if (nav.classList.contains("active") && !isClickInsideNav && !isClickOnToggle) {
+            nav.classList.remove("active");
+        }
     });
 });
 

@@ -75,23 +75,3 @@
         gap: 32px;
     }
 }
-
-@media (max-width: 480px) {
-
-    .nav-banc,
-    .bancario {
-        padding: 20px 16px;
-    }
-
-    .ser_nav {
-        padding: 16px;
-    }
-
-    .serv_nav_cont img {
-        height: 36px;
-    }
-
-    .btn-t2 {
-        font-size: 14px;
-    }
-}

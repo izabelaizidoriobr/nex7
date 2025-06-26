@@ -76,30 +76,39 @@
             <section class="cards_sobre">
                 <div class="card_sobre">
                     <h3 class="font-title-l cor-c2">MISSÃO</h3>
-                    <p class="font-text-m cor-b2">Oferecer soluções financeiras acessíveis, inovadoras e flexíveis que
-                        impulsionem o bem-estar das
-                        pessoas e empresas. Atuamos com ética, proatividade e eficiência.</p>
+                    <div class="card_conteudo">
+                        <p class="font-text-m cor-b2">
+                            Oferecer soluções financeiras acessíveis, inovadoras e flexíveis que
+                            impulsionem o bem-estar das pessoas e empresas. Atuamos com ética, proatividade e
+                            eficiência.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="card_sobre">
                     <h3 class="font-title-l cor-c2">VISÃO</h3>
-                    <p class="font-text-m cor-b2">Liderar a transformação do mercado de cartões benefícios, entregando
-                        práticas engajantes e criando
-                        novas possibilidades com soluções acessíveis e parcerias estratégicas.</p>
+                    <div class="card_conteudo">
+                        <p class="font-text-m cor-b2">Liderar a transformação do mercado de cartões benefícios,
+                            entregando
+                            práticas engajantes e criando
+                            novas possibilidades com soluções acessíveis e parcerias estratégicas.</p>
+                    </div>
                 </div>
 
                 <div class="card_sobre">
                     <h3 class="font-title-l cor-c2">VALORES</h3>
-                    <ul class="font-text-m cor-b2">
-                        <li>Humanização</li>
-                        <li>Excelência</li>
-                        <li>Inovação</li>
-                        <li>Modelo comprometido</li>
-                        <li>Proximidade e transparência</li>
-                        <li>Simplicidade que resolve</li>
-                        <li>Organizações sustentáveis</li>
-                        <li>Parcerias que transformam</li>
-                    </ul>
+                    <div class="card_conteudo">
+                        <ul class="font-text-m cor-b2">
+                            <li>Humanização</li>
+                            <li>Excelência</li>
+                            <li>Inovação</li>
+                            <li>Modelo comprometido</li>
+                            <li>Proximidade e transparência</li>
+                            <li>Simplicidade que resolve</li>
+                            <li>Organizações sustentáveis</li>
+                            <li>Parcerias que transformam</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -116,48 +125,39 @@
             </section>
 
 
-            <div class="timeline">
-                <div class="line"></div>
+            <section class="timeline">
+                <div class="timeline-line"></div>
 
-                <!-- Item com "..." centralizado -->
-                <div class="timeline-item first">
-                    <div class="timeline-content">
-                        <p class="font-text-m cor-b2">●●●</p>
-                    </div>
+                <!-- Pontos iniciais -->
+                <div class="timeline-item center">
+                    <div class="year-label font-text-l ">...</div>
                 </div>
 
-                <!-- Demais itens com ano -->
-                <div class="timeline-item">
-                    <div class="timeline-year font-title-m cor-b0">2022</div>
-                    <div class="timeline-content">
-                        <p class="font-text-m cor-b2">Surgimos como uma empresa focada em cartões benefícios, fechando
-                            parceria
-                            estratégica com a Vegas
-                            Card, que possuí uma trajetória respeitada de mais de 20 anos no mercado, pactuando dos
-                            nossos
-                            mesmos ideais.</p>
-                    </div>
+                <!-- 2022 -->
+                <div class="timeline-item left">
+                    <div class="year-label font-title-m">2022</div>
+                    <div class="card font-text-m">Surgimos como uma empresa focada em cartões benefícios, fechando
+                        parceria
+                        estratégica com a Vegas Card, que possui uma trajetória respeitada de mais de 20 anos no
+                        mercado, pactuando dos nossos mesmos ideais.</div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-year font-title-m cor-b0">2023</div>
-                    <div class="timeline-content">
-                        <p class="font-text-m cor-b2">Expandimos para o segmento de correspondente bancário,
-                            democratizando
-                            o acesso a crédito e
-                            produtos financeiros.</p>
-                    </div>
+                <!-- 2023 -->
+                <div class="timeline-item right">
+                    <div class="year-label font-title-m">2023</div>
+                    <div class="card font-text-m">Expandimos para o segmento de correspondente bancário, democratizando
+                        o acesso a
+                        crédito e produtos financeiros.</div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-year font-title-m cor-b0">HOJE</div>
-                    <div class="timeline-content destaque">
-                        <p class="font-text-m cor-b2">Somos uma equipe comprometida em gerar valor para clientes e
-                            parceiros, com soluções
-                            personalizadas e tecnologia eficiente.</p>
-                    </div>
+                <!-- HOJE -->
+                <div class="timeline-item left">
+                    <div class="year-label hoje font-title-m">HOJE</div>
+                    <div class="card destaque font-text-m">Somos uma equipe comprometida em gerar valor para clientes e
+                        parceiros,
+                        com soluções personalizadas e tecnologia eficiente.</div>
                 </div>
-            </div>
+            </section>
 
         </div>
     </section>
@@ -238,6 +238,26 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll('.timeline-item');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            items.forEach(item => {
+                item.classList.add('hidden'); // inicia escondido
+                observer.observe(item);
+            });
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>

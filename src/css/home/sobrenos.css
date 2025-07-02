@@ -2,6 +2,7 @@
     padding: 50px;
 }
 
+
 .sobre_conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -36,16 +37,20 @@
     width: 820px;
 }
 
-.sobre_img img {
-    width: 100%;
-    height: 700px;
+.sp-img {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .sobre_emp img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 64px;
 }
+
+
 
 
 @media (max-width: 1024px) {
@@ -58,8 +63,10 @@
         width: 100%;
     }
 
-    .sobre_img img {
-        height: 500px;
+    .hero_sobre img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
     }
 }
 

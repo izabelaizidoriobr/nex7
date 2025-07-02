@@ -156,21 +156,17 @@
                 <div class="decoracao">
                     <h2 class="cor-b0 font-title-s">Clientes</h2>
                     <div class="linha-horizontal"></div>
-
                 </div>
                 <div class="title_padrao1">
-                    <h1 class="cor-b0 font-title-xl">Soluções que Transformam Resultados</h1>
-                    <p class="cor-b3 font-text-m">Oferecemos tudo o que sua empresa precisa para crescer com eficiência,
-                        inovação e
-                        segurança.</p>
+                    <h1 class="cor-b0 font-title-xl">Conheça Nossos Clientes</h1>
+                    <p class="cor-b3 font-text-m">Atendimento de qualidade que gera conexão real.</p>
                 </div>
             </div>
 
             <div class="clientes_container">
-                <div class="clientes_logos_carossel">
+                <div class="clientes_logos_carrossel">
                     <div class="clientes_logos">
-
-
+                        <!-- Lista original de logos -->
                         <div class="est_logos"><img src="./img/icones/logosClientes/cineflix.png" alt=""></div>
                         <div class="est_logos"><img src="./img/icones/logosClientes/contersolo.png" alt=""></div>
                         <div class="est_logos"><img src="./img/icones/logosClientes/eletran.png" alt=""></div>
@@ -182,8 +178,6 @@
                         <div class="est_logos"><img src="./img/icones/logosClientes/prolife.png" alt=""></div>
                         <div class="est_logos"><img src="./img/icones/logosClientes/somavi.png" alt=""></div>
                         <div class="est_logos"><img src="./img/icones/logosClientes/steviasoul.png" alt=""></div>
-
-
                     </div>
                 </div>
 
@@ -264,7 +258,7 @@
 
             </div>
             <div class="title_padrao1">
-                <h1 class="cor-b0 font-title-xl">Seu Time Merece o Melhor – Conheça Nosso Combo</h1>
+                <h1 class="cor-b0 font-title-xl">Conheça Nosso Combo</h1>
                 <p class="cor-b3 font-text-m">Combo de Vantagens que Motivam e Engajam</p>
             </div>
         </div>
@@ -318,8 +312,8 @@
                         <div class="linha-horizontal"></div>
                     </div>
                     <div class="title_padrao1">
-                        <h1 class="cor-b0 font-title-xl">Seu Time Merece o Melhor – Conheça Nosso Combo</h1>
-                        <p class="cor-b3 font-text-m">Combo de Vantagens que Motivam e Engajam</p>
+                        <h1 class="cor-b0 font-title-xl">Parcerias de Valor, Impacto Real</h1>
+                        <p class="cor-b3 font-text-m">Colaboração estratégica com foco em performance</p>
                     </div>
                 </div>
 
@@ -463,7 +457,6 @@
         <div class="sobrenos_container">
             <div class="est_title_padrao">
                 <div class="decoracao">
-                    <h2 class="cor-b0 font-title-s">Sobre nós</h2>
                     <div class="linha-horizontal"></div>
                 </div>
             </div>
@@ -484,8 +477,10 @@
 
             </div>
         </div>
-        <div class="sobre_emp">
-            <img src="./img/imagens/grupo.01.png" alt="">
+        <div class="sp-img">
+            <div class="sobre_emp">
+                <img src="./img/imagens/grupo.01.png" alt="">
+            </div>
         </div>
     </div>
     <!-----------MAPA--------------->
@@ -576,6 +571,23 @@
 -->
         </div>
     </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Duplica logos dos clientes
+            const carrosselClientes = document.querySelector(".clientes_logos");
+            if (carrosselClientes) {
+                carrosselClientes.innerHTML += carrosselClientes.innerHTML;
+            }
+
+            // Duplica logos dos parceiros
+            const carrosselParceiros = document.querySelector(".parceiros_logos");
+            if (carrosselParceiros) {
+                carrosselParceiros.innerHTML += carrosselParceiros.innerHTML;
+            }
+        });
+    </script>
 
 
 

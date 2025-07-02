@@ -1,22 +1,30 @@
-//NAV BAR//
+// NAV BAR //
 document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.getElementById("nav-links");
+    const toggleBtn = document.getElementById("menu-toggle");
+    const navContainer = document.querySelector(".nav_container");
 
-    toggle.addEventListener("click", (e) => {
-        e.stopPropagation(); // Impede que o clique se propague e feche o menu
-        nav.classList.toggle("active");
+    toggleBtn.addEventListener("click", function (event) {
+        event.stopPropagation(); // evita que o clique no botão feche imediatamente
+        navContainer.classList.toggle("open");
     });
 
-    // Nova funcionalidade: fecha o menu ao clicar fora dele
-    document.addEventListener("click", function (e) {
-        const isClickInsideNav = nav.contains(e.target);
-        const isClickOnToggle = toggle.contains(e.target);
-
-        if (nav.classList.contains("active") && !isClickInsideNav && !isClickOnToggle) {
-            nav.classList.remove("active");
+    // Fecha o menu ao clicar fora
+    document.addEventListener("click", function (event) {
+        const isClickInside = navContainer.contains(event.target);
+        if (!isClickInside) {
+            navContainer.classList.remove("open");
         }
     });
+});
+
+// Nova funcionalidade: fecha o menu ao clicar fora dele
+document.addEventListener("click", function (e) {
+    const isClickInsideNav = nav.contains(e.target);
+    const isClickOnToggle = toggle.contains(e.target);
+
+    if (nav.classList.contains("active") && !isClickInsideNav && !isClickOnToggle) {
+        nav.classList.remove("active");
+    }
 });
 
 const slides = document.querySelectorAll(".introducao .slide");
